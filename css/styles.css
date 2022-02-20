@@ -5,6 +5,7 @@
   --background-section: #f5f4fa;
   --primary-text-color: #212121;
   --seconary-text-color: #757575;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -235,6 +236,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .features-list-title {
@@ -280,9 +282,6 @@ address {
   margin-bottom: 30px;
 }
 
-.features-icon {
-}
-
 /* ===2 SECTION=== */
 
 .benefits-section {
@@ -312,6 +311,7 @@ address {
 .team-list-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team-list-name {
@@ -376,12 +376,54 @@ address {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  /*); */
   fill: var(--main-color);
 }
 
 .social-list-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
+}
+
+/* ===clients section=== */
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.client-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 30px; */
+}
+
+.client-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: var(--secondary-color);
+}
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: var(--secondary-color);
+}
+
+.client-list-icon {
+  fill: var(--icon-color);
 }
 
 /* =====footer==== */
@@ -422,6 +464,60 @@ address {
 .footer .logo {
   margin-bottom: 20px;
 }
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-list-name {
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--secondary-color);
+}
+
+.footer-social-list-link:hover .social-list-icon,
+.footer-social-list-link:focus .social-list-icon {
+  fill: var(--main-color);
+}
+
+.footer-social-list-icon {
+  fill: var(--main-color);
+}
+
 /* ====portfolio main==== */
 
 .projects-list-button {
@@ -444,6 +540,7 @@ address {
 .projects-list-button:focus {
   color: var(--main-color);
   background-color: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-projects-title {
@@ -483,6 +580,10 @@ address {
 .portfolio-projects-item {
   margin: 15px;
   flex-flow: calc((100%-90px) / 3);
+}
+
+.portfolio-projects-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-projects-content {
