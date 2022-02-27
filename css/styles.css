@@ -165,6 +165,11 @@ address {
   background-color: var(--background-footer);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-container {
@@ -466,10 +471,6 @@ address {
 }
 
 .footer-social {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   margin-left: 70px;
 }
 
@@ -482,12 +483,17 @@ address {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-social-list-name {
+  text-transform: ;
   color: var(--main-color);
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .footer-social-list-item:not(:last-child) {
@@ -543,6 +549,10 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.portfolio-projects-link {
+  display: block;
+}
+
 .portfolio-projects-title {
   font-weight: 700;
   font-size: 18px;
@@ -582,7 +592,8 @@ address {
   flex-flow: calc((100%-90px) / 3);
 }
 
-.portfolio-projects-item:hover {
+.portfolio-projects-link:hover,
+.portfolio-projects-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
